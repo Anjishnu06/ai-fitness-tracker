@@ -273,7 +273,20 @@ app.post("/ai-food-calculator", async (req, res) => {
   Response format strictly:
   {
     "Calories": <number>,
-    "Carbs": <number>
+    "Carbs": <number>,
+    "Water": <number>,
+    "Protein": <number>,
+    "Sugar": <number>,
+    "Fiber": <number>,
+    "Fat": <number>,
+    "VitaminA": <number>,
+    "VitaminC": <number>,
+    "VitaminD": <number>,
+    "VitaminE": <number>,
+    "VitaminK": <number>,
+    "Calcium": <number>,
+    "Iron": <number>,
+    "Magnesium": <number>,
   }
 `;
   try {

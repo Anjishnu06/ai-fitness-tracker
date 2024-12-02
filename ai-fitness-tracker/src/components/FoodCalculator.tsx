@@ -58,6 +58,11 @@ const FoodCalculator: React.FC = () => {
           <p>{error}</p>
         </div>
       )}
+      {!foodData && !error && (
+        <div className="mt-4">
+          <p>Enter a food name to calculate calories and carbs. Or enter a healthy food</p>
+        </div>
+      )}
       {!error && foodData && (
         <div className="mt-4">
           <p>
@@ -65,6 +70,42 @@ const FoodCalculator: React.FC = () => {
           </p>
           <p>
             <strong>Carbs:</strong> {foodData.Carbs} grams
+          </p>
+          <p>
+            <strong>Water:</strong> {foodData.Water} grams
+          </p>
+          <p>
+            <strong>Protein:</strong> {foodData.Protein} grams
+          </p>
+          <p>
+            <strong>Sugar:</strong> {foodData.Sugar} grams
+          </p>
+          <p>
+            <strong>Fiber:</strong> {foodData.Fiber} grams
+          </p>
+          <p>
+            <strong>Fat:</strong> {foodData.Fat} grams
+          </p>
+          <p>
+            <strong>Vitamin A:</strong>{foodData.VitaminA} mg
+          </p>
+          <p>
+            <strong>Vitamin C:</strong> {foodData.VitaminC} mg
+          </p>
+          <p>
+            <strong>Vitamin E:</strong> {foodData.VitaminE} mg
+          </p>
+          <p>
+            <strong>Vitamin K:</strong> {foodData.VitaminK} mg
+          </p>
+          <p>
+            <strong>Calcium:</strong> {foodData.Calcium} mg
+          </p>
+          <p>
+            <strong>Iron:</strong> {foodData.Iron} mg
+          </p>
+          <p>
+            <strong>Magnesium:</strong> {foodData.Magnesium} mg
           </p>
         </div>
       )}

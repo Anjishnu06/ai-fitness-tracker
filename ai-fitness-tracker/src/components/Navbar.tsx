@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
               <div className="flex items-center">
                 <div className="hidden sm:ml-6 sm:flex sm:items-center">
                   <a
-                    href="/signup"
+                    href="/login"
                     className="ml-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white"
                     style={{ backgroundColor: '#F2803A' }}
                   >
